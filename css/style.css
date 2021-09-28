@@ -1,0 +1,566 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header .bx {
+  color: #ffb03b;
+  font-size: 20px;
+}
+
+/*--------------------------------------------------------------
+# Sección de inicio
+--------------------------------------------------------------*/
+#inicio .carousel-caption {
+  position: absolute;
+  top: 40%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 300;
+}
+
+#inicio .carousel-caption h1 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(255, 179, 86);
+}
+
+#inicio .carousel-caption p {
+  color: floralwhite;
+}
+
+#inicio .carousel-item {
+  background-color: #000;
+}
+
+#inicio img {
+  opacity: 0.29;
+}
+
+/*--------------------------------------------------------------
+# Sección de nosotros
+--------------------------------------------------------------*/
+#imagen {
+  padding: 40px 0 40px;
+  justify-content: center;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#imagen .imagen-about {
+  padding-bottom: 10px;
+}
+
+#imagen h3 {
+  font-family: "Dancing Script", cursive;
+}
+
+#imagen .text-ul {
+  color: #000;
+}
+
+#nosotros i {
+  color: #ffb03b;
+}
+
+#nosotros .us-info {
+  text-align: justify;
+}
+
+#nosotros .btn-menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+#nosotros .btn-outline-warning {
+  color: #000;
+  background-color: transparent;
+  border-color: #0c0900;
+}
+
+#nosotros .btn-outline-warning:hover {
+  color: #fff;
+  background-color: #ffb03b;
+  border-color: #ffbf3b;
+}
+
+#nosotros .us-distance {
+  text-align: justify;
+}
+
+#nosotros .section-title {
+  padding-top: 80px;
+  color: #000000;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+/*--------------------------------------------------------------
+# Sección de menu
+--------------------------------------------------------------*/
+#menu {
+  padding: 104px 0 80px 0;
+  width: 100%;
+  background-image: url("../images/menu/menu-bg.png");
+}
+
+#menu i {
+  color: #f05252;
+  font-size: 40px;
+}
+
+#menu .section-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#menu h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+#menu h2,
+h6 {
+  color: #000;
+}
+
+#menu .modal span,
+h5 {
+  color: #ffb03b;
+}
+
+#menu p {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #8b8b8a;
+}
+
+#menu h5 p {
+  padding-left: 10px;
+  float: left;
+}
+
+#menu h6 {
+  float: right;
+}
+
+#menu .btn-menu-section {
+  display: flex;
+  justify-content: center;
+}
+
+#menu .btn-outline-warning {
+  color: #000;
+  background-color: transparent;
+  border-color: #0c0900;
+}
+
+#menu .details {
+  padding-top: 30px;
+  text-align: justify;
+}
+
+/*--------------------------------------------------------------
+# Destacados
+--------------------------------------------------------------*/
+#destacados h2,
+h3 {
+  font-family: "Dancing Script", cursive;
+}
+
+#destacados .section-title {
+  padding-top: 40px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+#destacados .btn-menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+#destacados .btn-outline-warning {
+  color: #000;
+  background-color: transparent;
+  border-color: #0c0900;
+}
+
+#destacados .details {
+  padding-top: 30px;
+  text-align: justify;
+}
+
+#destacados h3 {
+  text-align: center;
+}
+
+#destacados .btn-outline-warning:hover {
+  color: #fff;
+  background-color: #ffb03b;
+  border-color: #ffbf3b;
+}
+
+#destacados h2 {
+  color: #000;
+}
+
+#destacados span {
+  color: #ffb03b;
+}
+
+#destacados .nav-pills {
+  text-align: right;
+  padding-top: 30px;
+}
+
+#destacados .image-bg {
+  background-image: url("../images/feature-bg.png");
+  padding-bottom: 30px;
+}
+
+.nav-pills {
+  background-color: #fff;
+  color: #000;
+}
+
+.nav-pills > li > a {
+  color: #000;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #ffb03b;
+  background-color: #fff;
+}
+
+.nav-pills > li > a:hover {
+  border: medium none;
+  border-radius: 0;
+  color: #ffb03b;
+}
+
+.special1 .special2 .special3 .special4 .special5 .special6 {
+  margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------
+# Testimonios
+--------------------------------------------------------------*/
+#testimonio {
+  text-align: center;
+}
+
+#testimonio .comilla {
+  font-size: 140%;
+}
+
+#testimonio #carouselTestimonio .carousel-item {
+  height: 300px;
+}
+
+#testimonio .carousel-caption {
+  position: absolute;
+  top: 10%;
+  padding-top: 0.15rem;
+  color: #fff;
+  text-align: center;
+}
+
+#testimonio .carousel-caption h1 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(252, 152, 31);
+}
+
+#testimonio .carousel-caption h4 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(226, 225, 225);
+}
+
+#testimonio .carousel-caption p {
+  color: floralwhite;
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+#testimonio .testimonial-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 2px;
+  opacity: 0.99;
+}
+
+#testimonio .stars {
+  color: #faef4f;
+}
+
+#testimonio .testimonio-personal {
+  color: #b8b8b8;
+  size: 10%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#testimonio .carousel-item {
+  background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/testimonials-bg.jpg");
+}
+
+/*--------------------------------------------------------------
+# Sección de eventos
+--------------------------------------------------------------*/
+#eventos-section {
+  background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/events-bg.jpg");
+  padding-bottom: 80px;
+  color: #fff;
+}
+
+#eventos-section h2,
+h3 {
+  font-family: "Dancing Script", cursive;
+}
+
+#eventos-section .section-title {
+  padding-bottom: 20px;
+  text-align: center;
+  padding-top: 86px;
+}
+
+#eventos-section .info-event {
+  text-align: justify;
+}
+
+#eventos-section i {
+  color: #ffb03b;
+}
+
+#eventos-section h2 {
+  color: rgb(255, 255, 255);
+}
+
+#eventos-section span {
+  color: #ffb03b;
+}
+
+#eventos-section image-evento {
+  color: #b8b8b8;
+  size: 10%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#eventos-section #carouselEventoSection .carousel-item {
+  height: 420px;
+}
+
+/*--------------------------------------------------------------
+# Sección de eventos inicio
+--------------------------------------------------------------*/
+#eventos .image-bg-service {
+  background-image: url("../images/events-bg-index.png");
+  padding-top: 20px;
+}
+
+#eventos h2,
+h3 {
+  font-family: "Dancing Script", cursive;
+}
+
+#eventos .section-title {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+#eventos .btn-menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+#eventos .btn-outline-warning {
+  color: #000;
+  background-color: transparent;
+  border-color: #0c0900;
+}
+
+#eventos .btn-outline-warning:hover {
+  color: #fff;
+  background-color: #ffb03b;
+  border-color: #ffbf3b;
+}
+
+#eventos h2 {
+  color: #000;
+}
+
+#eventos span {
+  color: #ffb03b;
+}
+
+/*--------------------------------------------------------------
+# Sección de contactos
+--------------------------------------------------------------*/
+#contactos {
+  padding: 80px 0;
+}
+
+#contactos i {
+  color: #ffb03b;
+  font-size: 2em;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+#contactos .section-title {
+  text-align: center;
+}
+
+#contactos h2,
+span,
+h4 {
+  font-family: "Dancing Script", cursive;
+}
+
+#contactos #contactos h2 {
+  color: #000;
+}
+
+#contactos span {
+  color: #ffb03b;
+}
+
+#contactos .formulario-contacto {
+  padding: 14px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+}
+
+#contactos iframe {
+  padding: 0 10px 0 10px;
+}
+
+/*--------------------------------------------------------------
+# Sección de chefs
+--------------------------------------------------------------*/
+#chefs {
+  padding: 30px 0 40px 0;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+#chefs .section-title {
+  padding-bottom: 10px;
+}
+
+#chefs h2,
+h3 {
+  color: #ffb03b;
+}
+
+#chefs h5 {
+  color: #000;
+}
+
+#chefs a {
+  color: #8b8b8a;
+  font-size: 20px;
+}
+
+#chefs .team {
+  padding-top: 10px;
+}
+
+/*--------------------------------------------------------------
+# Sección de galería de imágenes
+--------------------------------------------------------------*/
+#galeria {
+  padding-top: 80px;
+}
+
+#galeria .gal-item {
+  overflow: hidden;
+  padding: 8px;
+}
+
+#galeria .gal-item .box {
+  height: 100%;
+  overflow: hidden;
+}
+
+#galeria .box img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+#galeria h1 {
+  font-family: "Dancing Script", cursive;
+  color: #070707;
+}
+
+/*--------------------------------------------------------------
+# Sección de footer
+--------------------------------------------------------------*/
+
+#footer {
+  padding-top: 10px;
+  background-color: #0c0b0b;
+  color: #ffff;
+  text-align: center;
+  border-top: 1px solid rgba(50, 50, 50, 0.3);
+  width: 100%;
+  bottom: 0;
+}
+
+#footer i {
+  font-size: 20px;
+  color: #ffbf3b;
+}
+
+/*--------------------------------------------------------------
+# Mapa del sitio
+--------------------------------------------------------------*/
+#site-map {
+  padding-top: 80px;
+}
+
+#site-map i {
+  color: #ffb03b;
+}
+
+#site-map h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+#site-map h2 {
+  color: #000000;
+}
+
+#site-map .section-title h2 {
+  font-family: "Dancing Script", cursive;
+  color: #ffb03b;
+  text-align: center;
+}
+
+#site-map a {
+  color: #000;
+}
+
+#site-map .site {
+  padding-bottom: 20px;
+}
+
+#site-map .section-title h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
