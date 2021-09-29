@@ -69,18 +69,18 @@
             <div class="row mt-3">
                 <div class="col">
                     <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
-                    <form id="buy-process" action="#">
+                    <form id="buy-process" action="#" method="POST">
                         <div class="form-group row">
                             <label for="client" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
                             <div class="col-12 col-md-10">
                                 <input type="text" class="form-control" id="client"
-                                placeholder="Ingresa nombre cliente" required>
+                                placeholder="Ingresa nombre cliente" name="destinatario">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
                             <div class="col-12 col-md-10">
-                                <input type="email" class="form-control" id="address" placeholder="Ingresa tu correo" required>
+                                <input type="email" class="form-control" id="address" placeholder="Ingresa tu correo" name="cc_to">
                             </div>
                         </div>
 
