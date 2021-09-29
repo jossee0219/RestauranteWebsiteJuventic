@@ -49,7 +49,43 @@
               <li class="nav-item">
                 <a class="nav-link" href="map.html">Mapa del sitio</a>
               </li>
+              <li>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class='bx bx-cart-alt car-icon'></i>
+                          </a>
+                          <div id="buy-car" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                            <table id="car-list" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+              
+                            <a href="#" id="empty-car" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                            <a href="#" id="buy-process" class="btn btn-danger btn-block">Procesar
+                                Compra</a>
+                        </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </li>
             </ul>
+
             <form class="d-flex media">
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
               <a href="#" class="instagram"><i class="bx bxl-youtube"></i></a>
@@ -114,7 +150,7 @@
 
     <!-- ======= Sección menu ======= -->
     <section id="menu">
-      <div class="container content-menu">
+      <div class="container content-menu" id="list-products">
         <div class="section-title">
           <h2>Nuestro <span>Menú</span></h2>
           <a href="../pdf/menu.pdf" download="menu">
@@ -131,9 +167,9 @@
                 <img src="../images/menu/lobster-bisque.jpg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$9.98</strong></h6>
+                <h6 class="price"><strong>9.98</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <h5><strong>Lobster Bisquet</strong></h5>
+                  <h5 class="title-food"><strong>Lobster Bisquet</strong></h5>
                 </a>
 
                 <!-- Modal 1 -->
@@ -162,13 +198,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal1-->
                 <p>langosta con cebolla, apio, laurel, perejil, ajo y tomate frito.</p>
+                <a class="btn btn-outline-warning add-car id-food" href="" type="button" data-id="1">Añadir al carrito</a>
               </div>
             </div>
 
@@ -178,9 +214,9 @@
                 <img src="../images/menu/Bread-Barrel.jpg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$6.95</strong></h6>
+                <h6 class="price"><strong>6.95</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                  <h5><strong>Bread barrel</strong></h5>
+                  <h5 class="title-food"><strong>Bread barrel</strong></h5>
                 </a>
                 <!-- Modal 2 -->
                 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -207,13 +243,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal2-->
                 <p>Pan artesanal.</p>
+                <a class="btn btn-outline-warning add-car id-food" href="" type="button" data-id="2">Añadir al carrito</a>
               </div>
             </div>
 
@@ -223,9 +259,9 @@
                 <img src="../images/menu/Crab-Cake.jpeg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$7.95</strong></h6>
+                <h6 class="price"><strong>7.95</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                  <h5><strong>Crab Cake</strong></h5>
+                  <h5 class="title-food"><strong>Crab Cake</strong></h5>
                 </a>
                 <!-- Modal 3 -->
                 <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -252,13 +288,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal3-->
                 <p>Carne de cangrejo, huevo, cebolla, ajo, pastas.</p>
+                <a class="btn btn-outline-warning add-car" href="" type="button" data-id="3">Añadir al carrito</a>
               </div>
             </div>
 
@@ -268,9 +304,9 @@
                 <img src="../images/menu/Caesar-Selections.jpeg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$8.95</strong></h6>
+                <h6 class="price"><strong>8.95</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                  <h5><strong>Caesar Selections</strong></h5>
+                  <h5 class="title-food"><strong>Caesar Selections</strong></h5>
                 </a>
                 <!-- Modal 4 -->
                 <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -297,13 +333,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal4-->
                 <p>Lechuga italiana, pastas, jitomates, queso, vinagre.</p>
+                <a class="btn btn-outline-warning add-car" href="" type="button" data-id="4">Añadir al carrito</a>
               </div>
             </div>
 
@@ -316,9 +352,9 @@
                 <img src="../images/menu/Tuscan-Grilled.jpg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$9.95</strong></h6>
+                <h6 class="price"><strong>9.95</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                  <h5><strong>Tuscan Grilled</strong></h5>
+                  <h5 class="title-food"><strong>Tuscan Grilled</strong></h5>
                 </a>
                 <!-- Modal 5 -->
                 <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -345,13 +381,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal5-->
                 <p>Chuletón de ternera, aceite de oliva virgen, pimienta negra molida.</p>
+                <a class="btn btn-outline-warning add-car" href="" type="button" data-id="5">Añadir al carrito</a>
               </div>
             </div>
 
@@ -360,9 +396,9 @@
                 <img src="../images/menu/Mozarella-Stick.jpg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$4.95</strong></h6>
+                <h6 class="price"><strong>4.95</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                  <h5><strong>Mozzarella Stick</strong></h5>
+                  <h5 class="title-food"><strong>Mozzarella Stick</strong></h5>
                 </a>
                 <!-- Modal 6 -->
                 <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -389,13 +425,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal6-->
                 <p>Queso mozarella, salsa de tomate, salsa de ciruela.</p>
+                <a class="btn btn-outline-warning add-car" href="" type="button" data-id="6">Añadir al carrito</a>
               </div>
             </div>
 
@@ -404,9 +440,9 @@
                 <img src="../images/menu/Greek-Salad.jpeg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$8.95</strong></h6>
+                <h6 class="price"><strong>8.95</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal7">
-                  <h5><strong>Greek Salad</strong></h5>
+                  <h5 class="title-food"><strong>Greek Salad</strong></h5>
                 </a>
                 <!-- Modal 7 -->
                 <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -433,13 +469,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal7-->
                 <p>Tomate, pepino, pimiento, cebolla roja, sal, pimienta roja, orégano.</p>
+                <a class="btn btn-outline-warning add-car" href="" type="button" data-id="7">Añadir al carrito</a>
               </div>
             </div>
 
@@ -448,9 +484,9 @@
                 <img src="../images/menu/Lasagna.jpg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$9.95</strong></h6>
+                <h6 class="price"><strong>9.95</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal8">
-                  <h5><strong>Lasagna</strong></h5>
+                  <h5 class="title-food"><strong>Lasagna</strong></h5>
                 </a>
                 <!-- Modal8 -->
                 <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -477,13 +513,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal8-->
                 <p>Pasta, carne al gusto (pollo, cerdo, mixta), tómate, cebolla, aceite de oliva.</p>
+                <a class="btn btn-outline-warning add-car" href="" type="button" data-id="8">Añadir al carrito</a>
               </div>
             </div>
 
@@ -499,9 +535,9 @@
                 <img src="../images/menu/Bandeja-Paisa.jpg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$14.95</strong></h6>
+                <h6 class="price"><strong>14.95</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal9">
-                  <h5><strong>Bandeja Paisa</strong></h5>
+                  <h5 class="title-food"><strong>Bandeja Paisa</strong></h5>
                 </a>
                 <!-- Modal 9 -->
                 <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -528,13 +564,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal9-->
                 <p>Frijoles, arroz blanco, carne en polvo, chorizo, tajadas de platano.</p>
+                <a class="btn btn-outline-warning add-car" href="" type="button" data-id="9">Añadir al carrito</a>
               </div>
             </div>
 
@@ -543,9 +579,9 @@
                 <img src="../images/menu/Cocido.jpg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$9.99</strong></h6>
+                <h6 class="price"><strong>9.99</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal10">
-                  <h5><strong>Cocido Boyacense</strong></h5>
+                  <h5 class="title-food"><strong>Cocido Boyacense</strong></h5>
                 </a>
                 <!-- Modal 10 -->
                 <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -572,13 +608,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal11-->
                 <p>Carne de cerdo, carne de res, pollo, cubios, chaguas, frijol verde, mazorca.</p>
+                <a class="btn btn-outline-warning add-car" href="" type="button" data-id="10">Añadir al carrito</a>
               </div>
             </div>
 
@@ -591,9 +627,9 @@
                 <img src="../images/menu/Pizza.jpg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$11.95</strong></h6>
+                <h6 class="price"><strong>11.95</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal11">
-                  <h5><strong>Pizza</strong></h5>
+                  <h5 class="title-food"><strong>Pizza</strong></h5>
                 </a>
                 <!-- Modal 11 -->
                 <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -621,13 +657,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal11-->
                 <p>Pan horneado, queso mozarella, salsa de tomate, salami, tiras de cebolla.</p>
+                <a class="btn btn-outline-warning add-car" href="" type="button" data-id="11">Añadir al carrito</a>
               </div>
             </div>
             
@@ -638,9 +674,9 @@
                 <img src="../images/menu/Ajiaco-santafereno.jpg" alt="" class="img-fluid special1 rounded">
               </div>
               <div class="col-md-12">
-                <h6><strong>$6.95</strong></h6>
+                <h6 class="price"><strong>6.95</strong></h6>
                 <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal12">
-                  <h5><strong>Ajiaco santafereño</strong></h5>
+                  <h5 class="title-food"><strong>Ajiaco santafereño</strong></h5>
                 </a>
                 <!-- Modal 9 -->
                 <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -667,13 +703,13 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         <a class="btn btn btn-warning" href="../pages/contact.html" role="button" data-bs-toggle="modal" type="button">Contáctanos</a>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Cierre Modal9-->
                 <p>Pollo, guascas, papa sabanera, papa pastusa, papa criolla, arracacha.</p>
+                <a class="btn btn-outline-warning add-car" href="" type="button" data-id="12">Añadir al carrito</a>
               </div>
             </div>
           </div>
@@ -683,6 +719,8 @@
     <!-- ======= cierre sección menu ======= -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="../js/car.js"></script>
+    <script src="../js/order.js"></script>
 </body>
 
 
