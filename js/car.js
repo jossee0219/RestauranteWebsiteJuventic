@@ -26,7 +26,9 @@ class Car {
       }
     });
     if (productsLS === infoProduct.id) {
-      ("producto repetido");
+      this.deleteProductLocalStorage(infoProduct.id);
+      infoProduct.cantidad = product.querySelector(".cantidadMenu").value;
+      this.saveProductsLocalStorage(infoProduct);
     } else {
       this.insertCar(infoProduct);
     }
@@ -40,7 +42,7 @@ class Car {
       </td>
       <td>${product.titulo}</td>
       <td>${product.precio}</td>
-      <td>${product.cantidad}</td>
+      <td id='cant'>${product.cantidad}</td>
       <td>
         <a href="#" class="delete-product bx bxs-x-circle" data-id="${product.id}"></a>
       </td>
