@@ -15,7 +15,7 @@ class Car {
       titulo: product.querySelector("h5,.title-food").textContent,
       precio: product.querySelector("price,strong").textContent,
       id: product.querySelector(".add-car").getAttribute("data-id"),
-      cantidad: 1,
+      cantidad: product.querySelector(".cantidadMenu").value,
     };
     //Cuando se seleccione uno igual
     let productsLS;
@@ -40,6 +40,7 @@ class Car {
       </td>
       <td>${product.titulo}</td>
       <td>${product.precio}</td>
+      <td>${product.cantidad}</td>
       <td>
         <a href="#" class="delete-product bx bxs-x-circle" data-id="${product.id}"></a>
       </td>
@@ -111,6 +112,7 @@ class Car {
         </td>
         <td>${product.titulo}</td>
         <td>${product.precio}</td>
+        <td>${product.cantidad}</td>
         <td>
           <a href="#" class="delete-product bx bxs-x-circle" data-id="${product.id}"></a>
         </td>
@@ -166,7 +168,7 @@ class Car {
             product.cantidad
           }>
         </td>
-        <td>${product.precio * product.cantidad}</td>
+        <td id='subtotals'>${product.precio * product.cantidad}</td>
         <td>
           <a href="#" class="delete-product bx bxs-x-circle" style="font-size:30px" data-id="${
             product.id
@@ -175,5 +177,26 @@ class Car {
       `;
       shopLists.appendChild(row);
     });
+  }
+
+  obtainEvent(e) {
+    e.preventDefault();
+    let id, cant, product, productsLS;
+    if (e.target.classList.contains("cantidad")) {
+      product = e.target.parentElement.parentElement;
+      id = product.querySelector("a").getAttribute("data-id");
+      cant = product.querySelector("input").value;
+      let updateCant = document.querySelectorAll("#subtotals");
+      productsLS = this.obtainProductsLocalStorage();
+      productsLS.forEach(function (productLS, index) {
+        if (productLS.id === id) {
+          productLS.cantidad = cant;
+          updateCant[index].innerHTML = Number(cant * productsLS[index].precio);
+        }
+      });
+      localStorage.setItem("productos", JSON.stringify(productsLS));
+    } else {
+      console.log("click afuera");
+    }
   }
 }

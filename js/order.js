@@ -23,4 +23,12 @@ function loadEvent() {
   document.addEventListener("DOMContentLoaded", carInstance.readLocalStorage());
 
   orderProcessBtn.addEventListener("click", (e) => carInstance.orderProcess(e));
+
+  buycar.addEventListener("change", (e) => {
+    carInstance.obtainEvent(e);
+  });
+
+  buycar.addEventListener("keyup", (e) => {
+    carInstance.obtainEvent(e);
+  });
 }

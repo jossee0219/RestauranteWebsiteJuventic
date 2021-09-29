@@ -18,6 +18,14 @@ function loadEvent() {
   carInstance.totalCalculate();
 
   purchaseProcessBtn.addEventListener("click", purchaseProcess);
+
+  buycar.addEventListener("change", (e) => {
+    carInstance.obtainEvent(e);
+  });
+
+  buycar.addEventListener("keyup", (e) => {
+    carInstance.obtainEvent(e);
+  });
 }
 
 function purchaseProcess(e) {
