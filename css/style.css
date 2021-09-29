@@ -156,13 +156,24 @@ h5 {
   justify-content: center;
 }
 
-#menu .btn-outline-warning {
-  margin: 0 25% 5px 25%;
-}
-
 #menu .details {
   padding-top: 30px;
   text-align: justify;
+}
+
+#menu .id-food {
+  float: right;
+  margin: 0 34% 0 0;
+}
+
+#menu .cantidadMenu {
+  float: left;
+  margin: 0 0 0 10%;
+  margin-bottom: 20px;
+}
+
+#menu .form-control {
+  width: 16%;
 }
 /*--------------------------------------------------------------
 # Destacados
