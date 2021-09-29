@@ -3,7 +3,14 @@
 --------------------------------------------------------------*/
 header .bx {
   color: #ffb03b;
-  font-size: 20px;
+  font-size: 24px;
+}
+
+header .car-icon {
+  color: #b8b8b8;
+  font-size: 24px;
+  text-align: right;
+  padding-right: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -150,16 +157,13 @@ h5 {
 }
 
 #menu .btn-outline-warning {
-  color: #000;
-  background-color: transparent;
-  border-color: #0c0900;
+  margin: 0 25% 5px 25%;
 }
 
 #menu .details {
   padding-top: 30px;
   text-align: justify;
 }
-
 /*--------------------------------------------------------------
 # Destacados
 --------------------------------------------------------------*/
@@ -563,4 +567,22 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding-bottom: 30px;
+}
+
+/*-----------------------
+Cargando
+------------------------*/
+#load {
+  display: none;
+  width: 220px;
+}
+
+#mailImage {
+  width: 220px;
+}
+/*-----------------------
+Compra - Reserva
+------------------------*/
+#buy {
+  padding-top: 80px;
 }
