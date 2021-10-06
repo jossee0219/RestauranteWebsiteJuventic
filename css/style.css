@@ -597,3 +597,10 @@ Compra - Reserva
 #buy {
   padding-top: 80px;
 }
+
+/*-----------------------------------------------
+Form envío
+-----------------------------------------------*/
+#buy-process #total {
+  font-weight: bold;
+}
