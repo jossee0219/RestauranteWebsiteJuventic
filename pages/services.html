@@ -50,9 +50,6 @@
                 <a class="nav-link" href="map.html">Mapa del sitio</a>
               </li>
             </ul>
-            <div>
-              <i class='bx bx-cart-alt car-icon'></i>
-            </div>
             <form class="d-flex media">
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
               <a href="#" class="instagram"><i class="bx bxl-youtube"></i></a>
@@ -104,6 +101,8 @@
                         Nosotros contamos con todo lo que necesitas.
                       </p>
                       <div class="btn-menu">
+                        <a class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#ModalCumple">
+                        Reserva Ahora</a>
                         <a class="btn btn-outline-warning" href="../pages/contact.html" role="button">Contáctanos</a>
                       </div>
                     </div>
@@ -131,6 +130,8 @@
                         ¡Anímate a disfrutar con nosotros de tus eventos!
                       </p>
                       <div class="btn-menu">
+                        <a class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#ModalDespe">
+                        Reserva Ahora</a>
                         <a class="btn btn-outline-warning" href="../pages/contact.html" role="button">Contáctanos</a>
                       </div>
                     </div>
@@ -159,6 +160,8 @@
                         ¡Importante! reservar con al menos 3 días de anticipación.
                       </p>
                       <div class="btn-menu">
+                        <a class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#ModalCenaAmi">
+                        Reserva Ahora</a>
                         <a class="btn btn-outline-warning" href="../pages/contact.html" role="button">Contáctanos</a>
                       </div>
                     </div>
@@ -185,6 +188,8 @@
                         Nosotros nos encargaremos de llevar tu primera experiencia disco. Donde no dejarán de brincar, bailar y cantar con nuestro karaoke. Estamos seguros que será la fiesta del año de todos los niños.
                       </p>
                       <div class="btn-menu">
+                        <a class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#ModalFiestaInfa">
+                        Reserva Ahora</a>
                         <a class="btn btn-outline-warning" href="../pages/contact.html" role="button">Contáctanos</a>
                       </div>
                     </div>
@@ -212,6 +217,8 @@
                         Tu personalidad fijará el ritmo del evento.
                       </p>
                       <div class="btn-menu">
+                        <a class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#Modaldecla">
+                        Reserva Ahora</a>
                         <a class="btn btn-outline-warning" href="../pages/contact.html" role="button">Contáctanos</a>
                       </div>
                     </div>
@@ -237,6 +244,8 @@
                         Piensa en el lugar ideal y adaptaremos  a nuestro equipo de trabajo, luces, sonido y chefs profesionales para que todo sea espectacular y entrañable.
                       </p>
                       <div class="btn-menu">
+                        <a class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#ModalAni">
+                        Reserva Ahora</a>
                         <a class="btn btn-outline-warning" href="../pages/contact.html" role="button">Contáctanos</a>
                       </div>
                     </div>
@@ -257,8 +266,456 @@
       </div>
     </section>
     <!-- ======= cierre sección eventos ======= -->
+ <!-- ======= Sección modal eventos ======= -->
+ <!-- Modal Cumple -->
+ <div class="modal fade" id="ModalCumple" tabindex="-1" aria-labelledby="ModalCumple" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalCumple"><strong>Celebra tu cumpleaños</strong></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md">
+                <img class="img-fluid" src="../images/event-birthday.jpg" alt="">
+                <div class="section-title">
+                <h2>Celebra tu <span>Cumpleaños</span></h2>
+              </div>
+                <form id="form_cumple">
+                  <div class="field">
+                    <label for="nombre">nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre">
+                  </div>
+                  <div class="field">
+                    <label for="correo">correo</label>
+                    <input class="form-control" type="Email" name="correo" id="correo">
+                  </div>
+                    <input type="text" name="reserva" id="reserva" value="Cumpleaños" hidden>
+                  <div class="field">
+                    <label for="telefono">telefono</label>
+                    <input class="form-control" type="number" name="telefono" id="telefono">
+                  </div>
+                  <div class="field">
+                    <label for="indicaciones">indicaciones</label>
+                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                  </div>
+                  <div class="field">
+                    <label for="fecha">fecha</label>
+                    <input class="form-control" type="date" name="fecha" id="fecha">
+                  </div>
+                  <div class="field">
+                    <label for="hora">hora</label>
+                    <input class="form-control" type="time" name="hora" id="hora">
+                  </div>
+                  <div class="field">
+                    <label for="personas">Cantidad de personas</label>
+                    <input class="form-control" type="number" name="personas" id="personas">
+                  </div>
+                  
+                  <br>
+                  <input  class="btn btn-outline-warning" type="submit" id="button_cumple" value="Reservar" >
+                </form>
+                
+               
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- ======= Cierre modal cumple  ======= -->
+ 
+ <!-- Modal Despedida -->
+ <div class="modal fade" id="ModalDespe" tabindex="-1" aria-labelledby="ModalDespe" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalDespe"><strong>Despedida</strong></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md">
+                <img class="img-fluid" src="../images/event-custom.jpg" alt="">
+                <div class="section-title">
+                <h2> <span>Celebra tu Despedida</span></h2>
+              </div>
+                <form id="form_despe">
+                  <div class="field">
+                    <label for="nombre">nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre">
+                  </div>
+                  <div class="field">
+                    <label for="correo">correo</label>
+                    <input class="form-control" type="Email" name="correo" id="correo">
+                  </div>
+                    <input type="text" name="reserva" id="reserva" value="Despedida" hidden>
+                  <div class="field">
+                    <label for="telefono">telefono</label>
+                    <input class="form-control" type="number" name="telefono" id="telefono">
+                  </div>
+                  <div class="field">
+                    <label for="indicaciones">indicaciones</label>
+                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                  </div>
+                  <div class="field">
+                    <label for="fecha">fecha</label>
+                    <input class="form-control" type="date" name="fecha" id="fecha">
+                  </div>
+                  <div class="field">
+                    <label for="hora">hora</label>
+                    <input class="form-control" type="time" name="hora" id="hora">
+                  </div>
+                  <div class="field">
+                    <label for="personas">Cantidad de personas</label>
+                    <input class="form-control" type="number" name="personas" id="personas">
+                  </div>
+                  
+                  <br>
+                  <input  class="btn btn-outline-warning" type="submit" id="button_despe" value="Reservar" >
+                </form>
+                
+               
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- ======= Cierre modal despedida  ======= -->
+ 
+ 
+ <!-- Modal Cena amigos -->
+ <div class="modal fade" id="ModalCenaAmi" tabindex="-1" aria-labelledby="ModalCenaAmi" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalCenaAmi"><strong>Cena Con Amigos</strong></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md">
+                <img class="img-fluid" src="../images/event-private.jpg" alt="">
+                <div class="section-title">
+                <h2> <span>Ven a comer con tus amigos</span></h2>
+              </div>
+                <form id="form_cena_ami">
+                  <div class="field">
+                    <label for="nombre">nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre">
+                  </div>
+                  <div class="field">
+                    <label for="correo">correo</label>
+                    <input class="form-control" type="Email" name="correo" id="correo">
+                  </div>
+                    <input type="text" name="reserva" id="reserva" value="Cena Con Amigos" hidden>
+                  <div class="field">
+                    <label for="telefono">telefono</label>
+                    <input class="form-control" type="number" name="telefono" id="telefono">
+                  </div>
+                  <div class="field">
+                    <label for="indicaciones">indicaciones</label>
+                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                  </div>
+                  <div class="field">
+                    <label for="fecha">fecha</label>
+                    <input class="form-control" type="date" name="fecha" id="fecha">
+                  </div>
+                  <div class="field">
+                    <label for="hora">hora</label>
+                    <input class="form-control" type="time" name="hora" id="hora">
+                  </div>
+                  <div class="field">
+                    <label for="personas">Cantidad de personas</label>
+                    <input class="form-control" type="number" name="personas" id="personas">
+                  </div>
+                  
+                  <br>
+                  <input  class="btn btn-outline-warning" type="submit" id="button_cena_ami" value="Reservar" >
+                </form>
+                
+               
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- ======= Cierre modal Cena con amigos  ======= -->
+
+  <!-- Modal Fiestas Infantiles -->
+  <div class="modal fade" id="ModalFiestaInfa" tabindex="-1" aria-labelledby="ModalFiestaInfa" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalFiestaInfa"><strong>Fiestas Infantiles</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md">
+                  <img class="img-fluid" src="../images/child-party.jpg" alt="">
+                  <div class="section-title">
+                  <h2> <span>Ven a celebrar la fiesta de tu hijo</span></h2>
+                </div>
+                  <form id="form_fiesta_infa">
+                    <div class="field">
+                      <label for="nombre">nombre</label>
+                      <input class="form-control" type="text" name="nombre" id="nombre">
+                    </div>
+                    <div class="field">
+                      <label for="correo">correo</label>
+                      <input class="form-control" type="Email" name="correo" id="correo">
+                    </div>
+                      <input type="text" name="reserva" id="reserva" value="Fiesta Infantil" hidden>
+                    <div class="field">
+                      <label for="telefono">telefono</label>
+                      <input class="form-control" type="number" name="telefono" id="telefono">
+                    </div>
+                    <div class="field">
+                      <label for="indicaciones">indicaciones</label>
+                      <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                    </div>
+                    <div class="field">
+                      <label for="fecha">fecha</label>
+                      <input class="form-control" type="date" name="fecha" id="fecha">
+                    </div>
+                    <div class="field">
+                      <label for="hora">hora</label>
+                      <input class="form-control" type="time" name="hora" id="hora">
+                    </div>
+                    <div class="field">
+                      <label for="personas">Cantidad de personas</label>
+                      <input class="form-control" type="number" name="personas" id="personas">
+                    </div>
+                    
+                    <br>
+                    <input  class="btn btn-outline-warning" type="submit" id="button_fiesta_infa" value="Reservar" >
+                  </form>
+                  
+                 
+                </div>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- ======= Cierre modal Fiestas infantiles  ======= -->
+
+<!-- Modal Declaraciones o propuestas -->
+<div class="modal fade" id="Modaldecla" tabindex="-1" aria-labelledby="Modaldecla" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Modaldecla"><strong>Declaraciones o propuestas</strong></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md">
+                <img class="img-fluid" src="../images/proposal.jpg" alt="">
+                <div class="section-title">
+                <h2> <span>Declarate a tu amad@</span></h2>
+              </div>
+                <form id="form_decla">
+                  <div class="field">
+                    <label for="nombre">nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre">
+                  </div>
+                  <div class="field">
+                    <label for="correo">correo</label>
+                    <input class="form-control" type="Email" name="correo" id="correo">
+                  </div>
+                    <input type="text" name="reserva" id="reserva" value="Declaracion o propuesta" hidden>
+                  <div class="field">
+                    <label for="telefono">telefono</label>
+                    <input class="form-control" type="number" name="telefono" id="telefono">
+                  </div>
+                  <div class="field">
+                    <label for="indicaciones">indicaciones</label>
+                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                  </div>
+                  <div class="field">
+                    <label for="fecha">fecha</label>
+                    <input class="form-control" type="date" name="fecha" id="fecha">
+                  </div>
+                  <div class="field">
+                    <label for="hora">hora</label>
+                    <input class="form-control" type="time" name="hora" id="hora">
+                  </div>
+                  <div class="field">
+                    <label for="personas">Cantidad de personas</label>
+                    <input class="form-control" type="number" name="personas" id="personas">
+                  </div>
+                  
+                  <br>
+                  <input  class="btn btn-outline-warning" type="submit" id="button_decla" value="Reservar" >
+                </form>
+                
+               
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- ======= Cierre modal Declaraciones o propuestas  ======= -->
+
+ <!-- Modal Declaraciones o propuestas -->
+<div class="modal fade" id="Modaldecla" tabindex="-1" aria-labelledby="Modaldecla" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Modaldecla"><strong>Declaraciones o propuestas</strong></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md">
+                <img class="img-fluid" src="../images/proposal.jpg" alt="">
+                <div class="section-title">
+                <h2> <span>Declarate a tu amad@</span></h2>
+              </div>
+                <form id="form_decla">
+                  <div class="field">
+                    <label for="nombre">nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre">
+                  </div>
+                  <div class="field">
+                    <label for="correo">correo</label>
+                    <input class="form-control" type="Email" name="correo" id="correo">
+                  </div>
+                    <input type="text" name="reserva" id="reserva" value="Declaracion o propuesta" hidden>
+                  <div class="field">
+                    <label for="telefono">telefono</label>
+                    <input class="form-control" type="number" name="telefono" id="telefono">
+                  </div>
+                  <div class="field">
+                    <label for="indicaciones">indicaciones</label>
+                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                  </div>
+                  <div class="field">
+                    <label for="fecha">fecha</label>
+                    <input class="form-control" type="date" name="fecha" id="fecha">
+                  </div>
+                  <div class="field">
+                    <label for="hora">hora</label>
+                    <input class="form-control" type="time" name="hora" id="hora">
+                  </div>
+                  <div class="field">
+                    <label for="personas">Cantidad de personas</label>
+                    <input class="form-control" type="number" name="personas" id="personas">
+                  </div>
+                  <br>
+                  <input  class="btn btn-outline-warning" type="submit" id="button_decla" value="Reservar" >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- ======= Cierre modal Declaraciones o propuestas  ======= -->
+
+ <!-- Modal Aniversario -->
+<div class="modal fade" id="ModalAni" tabindex="-1" aria-labelledby="ModalAni" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalAni"><strong>Aniversario</strong></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md">
+                <img class="img-fluid" src="../images/anniversary.jpg" alt="">
+                <div class="section-title">
+                <h2> <span>Celebra tu Aniversario</span></h2>
+              </div>
+                <form id="form_ani">
+                  <div class="field">
+                    <label for="nombre">nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre">
+                  </div>
+                  <div class="field">
+                    <label for="correo">correo</label>
+                    <input class="form-control" type="Email" name="correo" id="correo">
+                  </div>
+                    <input type="text" name="reserva" id="reserva" value="Aniversario" hidden>
+                  <div class="field">
+                    <label for="telefono">telefono</label>
+                    <input class="form-control" type="number" name="telefono" id="telefono">
+                  </div>
+                  <div class="field">
+                    <label for="indicaciones">indicaciones</label>
+                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                  </div>
+                  <div class="field">
+                    <label for="fecha">fecha</label>
+                    <input class="form-control" type="date" name="fecha" id="fecha">
+                  </div>
+                  <div class="field">
+                    <label for="hora">hora</label>
+                    <input class="form-control" type="time" name="hora" id="hora">
+                  </div>
+                  <div class="field">
+                    <label for="personas">Cantidad de personas</label>
+                    <input class="form-control" type="number" name="personas" id="personas">
+                  </div>
+                  <br>
+                  <input  class="btn btn-outline-warning" type="submit" id="button_ani" value="Reservar" >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- ======= Cierre modal Aniversario  ======= -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/reservation.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('user_ueQX19o7DPyIEt7Q0KiW7')
+  </script>
 </body>
 
 

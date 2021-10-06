@@ -15,6 +15,9 @@
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
     <header>
@@ -76,8 +79,7 @@
                             </table>
               
                             <a href="#" id="empty-car" class="btn btn-primary btn-block">Vaciar Carrito</a>
-                            <a href="#" id="buy-process" class="btn btn-danger btn-block">Procesar
-                                Compra</a>
+                            <a href="#" id="buy-process" class="btn btn-danger btn-block">Finalizar pedido</a>
                         </div>
                         </li>
                       </ul>
@@ -392,7 +394,7 @@
                 </div>
                 <!-- Cierre Modal5-->
                 <p>Chuletón de ternera, aceite de oliva virgen, pimienta negra molida.</p>
-                <input type="number" class="form-control cantidadMenu" min="1" value="0">
+                <input id="5" type="number" class="form-control cantidadMenu" min="1" value="0">
                 <a class="btn btn-outline-warning add-car id-food" href="" type="button" data-id="5">Añadir al carrito</a>
               </div>
             </div>
