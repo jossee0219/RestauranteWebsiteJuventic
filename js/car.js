@@ -151,7 +151,7 @@ class Car {
 
     document.getElementById("subtotal").innerHTML = "$" + subtotal;
     document.getElementById("igv").innerHTML = "$" + igv;
-    document.getElementById("total").innerHTML = "$" + total.toFixed(2);
+    document.getElementById("total").value = "$" + total.toFixed(2);
   }
 
   readLocalStorageShop() {
@@ -170,7 +170,9 @@ class Car {
             product.cantidad
           }>
         </td>
-        <td id='subtotals'>${product.precio * product.cantidad}</td>
+        <td id='subtotals'>${(product.precio * product.cantidad).toFixed(
+          2
+        )}</td>
         <td>
           <a href="#" class="delete-product bx bxs-x-circle" style="font-size:30px" data-id="${
             product.id

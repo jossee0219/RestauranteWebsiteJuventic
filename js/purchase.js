@@ -41,19 +41,49 @@ function purchaseProcess(e) {
   } else {
     const loadingGif = document.querySelector("#load");
     loadingGif.style.display = "block";
-
     const send = document.createElement("img");
     send.src = "../images/mail.gif";
     send.id = "mailImage";
-
-    setTimeout(() => {
-      loadingGif.style.display = "none";
-      document.querySelector("#loaders").appendChild(send);
-      setTimeout(() => {
-        send.remove();
-        carInstance.emptyLocalStorage();
-        window.location = "menu.html";
-      }, 2000);
-    }, 3000);
+    let productsLS, product;
+    productsLS = JSON.parse(localStorage.getItem("productos"));
+    productsLS.forEach(function (productLS, index) {
+      product +=
+        "\n" +
+        JSON.stringify(
+          "Plato: " +
+            productLS.titulo +
+            " Precio: $" +
+            productLS.precio +
+            " Cantidad: " +
+            productLS.cantidad
+        );
+    }),
+      console.log(document.querySelector("#total,p"));
+    emailjs
+      .send("service_2xj4c8l", "template_fqv6ixm", {
+        addressee: document.getElementById("client").value,
+        products: product.replace("undefined", ""),
+        cc_to: document.getElementById("address").value,
+        total_value: document.getElementById("total").value,
+      })
+      .then(
+        function () {
+          loadingGif.style.display = "none";
+          document.querySelector("#loaders").appendChild(send);
+          setTimeout(() => {
+            send.remove();
+            carInstance.emptyLocalStorage();
+            alert(
+              "Pedido registrado exitosamente\n Revisa el correo diligenciado, por favor"
+            );
+            window.location = "menu.html";
+          }, 2000);
+        },
+        function (err) {
+          alert(
+            "Falló el envío del email\r\n Respuesta:\n " + JSON.stringify(err)
+          );
+        }
+      );
   }
 }
