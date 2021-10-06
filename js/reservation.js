@@ -14,6 +14,7 @@ document
       () => {
         btn_cumple.value = "Reservar";
         alert("Reservado!");
+        localStorage.clear();
       },
       (err) => {
         btn_cumple.value = "Reservar";
