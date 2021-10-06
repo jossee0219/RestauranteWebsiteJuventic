@@ -15,6 +15,21 @@
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <script>
+      function allLetter(inputtxt)
+      {
+      var letters = /^[A-Za-z]+$/;
+      if(inputtxt.value.match(letters))
+        {
+          return true;
+        }
+      else
+        {
+        alert("message");
+        return false;
+        }
+      }
+    </script>
 </head>
 <body>
     <header>
@@ -282,46 +297,49 @@
               <div class="col-md">
                 <img class="img-fluid" src="../images/event-birthday.jpg" alt="">
                 <div class="section-title">
-                <h2>Celebra tu <span>Cumpleaños</span></h2>
-              </div>
+                  <h2>Celebra tu <span>Cumpleaños</span></h2>
+                </div>
                 <form id="form_cumple">
                   <div class="field">
-                    <label for="nombre">nombre</label>
-                    <input class="form-control" type="text" name="nombre" id="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre" maxlength="50"
+                    minlength="20" required>
                   </div>
                   <div class="field">
-                    <label for="correo">correo</label>
-                    <input class="form-control" type="Email" name="correo" id="correo">
+                    <label for="correo">Correo</label>
+                    <input class="form-control" type="email" name="correo" id="correo" aria-describedby="emailHelp" maxlength="60"
+                    minlength="13" required>
                   </div>
                     <input type="text" name="reserva" id="reserva" value="Cumpleaños" hidden>
                   <div class="field">
-                    <label for="telefono">telefono</label>
-                    <input class="form-control" type="number" name="telefono" id="telefono">
+                    <label for="telefono">Teléfono móvil</label>
+                    <input class="form-control" type="tel" name="telefono" pattern="[0-9]{10}" id="telefono" required >
+                    <div class="invalid-feedback">
+                      Por favor, ingrese el nombre en el campo correspondiente
+                    </div>
                   </div>
                   <div class="field">
-                    <label for="indicaciones">indicaciones</label>
-                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                    <label for="indicaciones">Indicaciones</label>
+                    <textarea class="form-control" name="indicaciones" id="indicaciones" maxlength="100"
+                    minlength="20" required></textarea>
                   </div>
                   <div class="field">
                     <label for="fecha">fecha</label>
-                    <input class="form-control" type="date" name="fecha" id="fecha">
+                    <input class="form-control" type="date" name="fecha" id="fecha" required>
                   </div>
                   <div class="field">
                     <label for="hora">hora</label>
-                    <input class="form-control" type="time" name="hora" id="hora">
+                    <input class="form-control" type="time" name="hora" id="hora" required>
                   </div>
                   <div class="field">
                     <label for="personas">Cantidad de personas</label>
-                    <input class="form-control" type="number" name="personas" id="personas">
+                    <input class="form-control" type="number" name="personas" id="personas" maxlength="3" required>
                   </div>
                   
                   <br>
-                  <input  class="btn btn-outline-warning" type="submit" id="button_cumple" value="Reservar" >
-                </form>
-                
-               
+                  <input  class="btn btn-outline-warning" type="submit" id="button_cumple" value="Reservar" onclick="allLetter(document.form_cumple.nombre)">
+                </form>           
               </div>
-                
             </div>
           </div>
         </div>
@@ -346,46 +364,45 @@
               <div class="col-md">
                 <img class="img-fluid" src="../images/event-custom.jpg" alt="">
                 <div class="section-title">
-                <h2> <span>Celebra tu Despedida</span></h2>
-              </div>
+                  <h2> <span>Celebra tu Despedida</span></h2>
+                </div>
                 <form id="form_despe">
                   <div class="field">
-                    <label for="nombre">nombre</label>
-                    <input class="form-control" type="text" name="nombre" id="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre" maxlength="50"
+                    minlength="20" pattern="[A-Za-z]{10,50}" required>
                   </div>
                   <div class="field">
-                    <label for="correo">correo</label>
-                    <input class="form-control" type="Email" name="correo" id="correo">
+                    <label for="correo">Correo</label>
+                    <input class="form-control" type="email" name="correo" id="correo" aria-describedby="emailHelp" maxlength="60"
+                    minlength="13" required>
                   </div>
-                    <input type="text" name="reserva" id="reserva" value="Despedida" hidden>
+                    <input type="text" name="reserva" id="reserva" value="Cumpleaños" hidden>
                   <div class="field">
-                    <label for="telefono">telefono</label>
-                    <input class="form-control" type="number" name="telefono" id="telefono">
+                    <label for="telefono">Teléfono</label>
+                    <input class="form-control" type="tel" name="telefono" pattern="[0-9]{10}" id="telefono" required >
                   </div>
                   <div class="field">
-                    <label for="indicaciones">indicaciones</label>
-                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                    <label for="indicaciones">Indicaciones</label>
+                    <textarea class="form-control" name="indicaciones" id="indicaciones" maxlength="100"
+                    minlength="20" required></textarea>
                   </div>
                   <div class="field">
                     <label for="fecha">fecha</label>
-                    <input class="form-control" type="date" name="fecha" id="fecha">
+                    <input class="form-control" type="date" name="fecha" id="fecha" required>
                   </div>
                   <div class="field">
                     <label for="hora">hora</label>
-                    <input class="form-control" type="time" name="hora" id="hora">
+                    <input class="form-control" type="time" name="hora" id="hora" required>
                   </div>
                   <div class="field">
                     <label for="personas">Cantidad de personas</label>
-                    <input class="form-control" type="number" name="personas" id="personas">
+                    <input class="form-control" type="number" name="personas" id="personas" maxlength="3" required>
                   </div>
-                  
                   <br>
-                  <input  class="btn btn-outline-warning" type="submit" id="button_despe" value="Reservar" >
+                  <input  class="btn btn-outline-warning" type="submit" id="button_despe" value="Reservar" onclick="allLetter(document.form_despe.nombre)">
                 </form>
-                
-               
-              </div>
-                
+              </div>  
             </div>
           </div>
         </div>
@@ -411,46 +428,45 @@
               <div class="col-md">
                 <img class="img-fluid" src="../images/event-private.jpg" alt="">
                 <div class="section-title">
-                <h2> <span>Ven a comer con tus amigos</span></h2>
-              </div>
+                  <h2> <span>Ven a comer con tus amigos</span></h2>
+                </div>
                 <form id="form_cena_ami">
                   <div class="field">
-                    <label for="nombre">nombre</label>
-                    <input class="form-control" type="text" name="nombre" id="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre" maxlength="50"
+                    minlength="20" required pattern="[A-Za-z]{10,50}">
                   </div>
                   <div class="field">
-                    <label for="correo">correo</label>
-                    <input class="form-control" type="Email" name="correo" id="correo">
+                    <label for="correo">Correo</label>
+                    <input class="form-control" type="email" name="correo" id="correo" aria-describedby="emailHelp" maxlength="60"
+                    minlength="13" required>
                   </div>
-                    <input type="text" name="reserva" id="reserva" value="Cena Con Amigos" hidden>
+                    <input type="text" name="reserva" id="reserva" value="Cumpleaños" hidden>
                   <div class="field">
-                    <label for="telefono">telefono</label>
-                    <input class="form-control" type="number" name="telefono" id="telefono">
+                    <label for="telefono">Teléfono</label>
+                    <input class="form-control" type="tel" name="telefono" pattern="[0-9]{10}" id="telefono" required>
                   </div>
                   <div class="field">
-                    <label for="indicaciones">indicaciones</label>
-                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                    <label for="indicaciones">Indicaciones</label>
+                    <textarea class="form-control" name="indicaciones" id="indicaciones" maxlength="100"
+                    minlength="20" required></textarea>
                   </div>
                   <div class="field">
                     <label for="fecha">fecha</label>
-                    <input class="form-control" type="date" name="fecha" id="fecha">
+                    <input class="form-control" type="date" name="fecha" id="fecha" required>
                   </div>
                   <div class="field">
                     <label for="hora">hora</label>
-                    <input class="form-control" type="time" name="hora" id="hora">
+                    <input class="form-control" type="time" name="hora" id="hora" required>
                   </div>
                   <div class="field">
                     <label for="personas">Cantidad de personas</label>
-                    <input class="form-control" type="number" name="personas" id="personas">
+                    <input class="form-control" type="number" name="personas" id="personas" maxlength="3" required>
                   </div>
-                  
                   <br>
-                  <input  class="btn btn-outline-warning" type="submit" id="button_cena_ami" value="Reservar" >
+                  <input  class="btn btn-outline-warning" type="submit" id="button_cena_ami" value="Reservar" onclick="allLetter(document.form_cena_ami.nombre)">
                 </form>
-                
-               
               </div>
-                
             </div>
           </div>
         </div>
@@ -475,46 +491,45 @@
                 <div class="col-md">
                   <img class="img-fluid" src="../images/child-party.jpg" alt="">
                   <div class="section-title">
-                  <h2> <span>Ven a celebrar la fiesta de tu hijo</span></h2>
-                </div>
+                    <h2> <span>Ven a celebrar la fiesta de tu hijo</span></h2>
+                  </div>
                   <form id="form_fiesta_infa">
                     <div class="field">
-                      <label for="nombre">nombre</label>
-                      <input class="form-control" type="text" name="nombre" id="nombre">
+                      <label for="nombre">Nombre</label>
+                      <input class="form-control" type="text" name="nombre" id="nombre" maxlength="50"
+                      minlength="20" required pattern="[A-Za-z]{10,50}">
                     </div>
                     <div class="field">
-                      <label for="correo">correo</label>
-                      <input class="form-control" type="Email" name="correo" id="correo">
+                      <label for="correo">Correo</label>
+                      <input class="form-control" type="email" name="correo" id="correo" aria-describedby="emailHelp" maxlength="60"
+                      minlength="13" required>
                     </div>
-                      <input type="text" name="reserva" id="reserva" value="Fiesta Infantil" hidden>
+                      <input type="text" name="reserva" id="reserva" value="Cumpleaños" hidden>
                     <div class="field">
-                      <label for="telefono">telefono</label>
-                      <input class="form-control" type="number" name="telefono" id="telefono">
+                      <label for="telefono">Teléfono</label>
+                      <input class="form-control" type="tel" name="telefono" pattern="[0-9]{10}" id="telefono" required>
                     </div>
                     <div class="field">
-                      <label for="indicaciones">indicaciones</label>
-                      <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                      <label for="indicaciones">Indicaciones</label>
+                      <textarea class="form-control" name="indicaciones" id="indicaciones" maxlength="100"
+                      minlength="20" required></textarea>
                     </div>
                     <div class="field">
                       <label for="fecha">fecha</label>
-                      <input class="form-control" type="date" name="fecha" id="fecha">
+                      <input class="form-control" type="date" name="fecha" id="fecha" required>
                     </div>
                     <div class="field">
                       <label for="hora">hora</label>
-                      <input class="form-control" type="time" name="hora" id="hora">
+                      <input class="form-control" type="time" name="hora" id="hora" required>
                     </div>
                     <div class="field">
                       <label for="personas">Cantidad de personas</label>
-                      <input class="form-control" type="number" name="personas" id="personas">
+                      <input class="form-control" type="number" name="personas" id="personas" maxlength="3" required>
                     </div>
-                    
                     <br>
-                    <input  class="btn btn-outline-warning" type="submit" id="button_fiesta_infa" value="Reservar" >
+                    <input  class="btn btn-outline-warning" type="submit" id="button_fiesta_infa" value="Reservar" onclick="allLetter(document.form_fiesta_infa.nombre)">
                   </form>
-                  
-                 
                 </div>
-                  
               </div>
             </div>
           </div>
@@ -539,104 +554,43 @@
               <div class="col-md">
                 <img class="img-fluid" src="../images/proposal.jpg" alt="">
                 <div class="section-title">
-                <h2> <span>Declarate a tu amad@</span></h2>
-              </div>
+                  <h2> <span>Declarate a tu amad@</span></h2>
+                </div>
                 <form id="form_decla">
                   <div class="field">
-                    <label for="nombre">nombre</label>
-                    <input class="form-control" type="text" name="nombre" id="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre" maxlength="50"
+                    minlength="20" required pattern="[A-Za-z]{10,50}">
                   </div>
                   <div class="field">
-                    <label for="correo">correo</label>
-                    <input class="form-control" type="Email" name="correo" id="correo">
+                    <label for="correo">Correo</label>
+                    <input class="form-control" type="email" name="correo" id="correo" aria-describedby="emailHelp" maxlength="60"
+                    minlength="13" required>
                   </div>
-                    <input type="text" name="reserva" id="reserva" value="Declaracion o propuesta" hidden>
+                    <input type="text" name="reserva" id="reserva" value="Cumpleaños" hidden>
                   <div class="field">
-                    <label for="telefono">telefono</label>
-                    <input class="form-control" type="number" name="telefono" id="telefono">
+                    <label for="telefono">Teléfono</label>
+                    <input class="form-control" type="tel" name="telefono" pattern="[0-9]{10}" id="telefono" required>
                   </div>
                   <div class="field">
-                    <label for="indicaciones">indicaciones</label>
-                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                    <label for="indicaciones">Indicaciones</label>
+                    <textarea class="form-control" name="indicaciones" id="indicaciones" maxlength="100"
+                    minlength="20" required></textarea>
                   </div>
                   <div class="field">
                     <label for="fecha">fecha</label>
-                    <input class="form-control" type="date" name="fecha" id="fecha">
+                    <input class="form-control" type="date" name="fecha" id="fecha" required>
                   </div>
                   <div class="field">
                     <label for="hora">hora</label>
-                    <input class="form-control" type="time" name="hora" id="hora">
+                    <input class="form-control" type="time" name="hora" id="hora" required>
                   </div>
                   <div class="field">
                     <label for="personas">Cantidad de personas</label>
-                    <input class="form-control" type="number" name="personas" id="personas">
-                  </div>
-                  
-                  <br>
-                  <input  class="btn btn-outline-warning" type="submit" id="button_decla" value="Reservar" >
-                </form>
-                
-               
-              </div>
-                
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
- <!-- ======= Cierre modal Declaraciones o propuestas  ======= -->
-
- <!-- Modal Declaraciones o propuestas -->
-<div class="modal fade" id="Modaldecla" tabindex="-1" aria-labelledby="Modaldecla" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="Modaldecla"><strong>Declaraciones o propuestas</strong></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md">
-                <img class="img-fluid" src="../images/proposal.jpg" alt="">
-                <div class="section-title">
-                <h2> <span>Declarate a tu amad@</span></h2>
-              </div>
-                <form id="form_decla">
-                  <div class="field">
-                    <label for="nombre">nombre</label>
-                    <input class="form-control" type="text" name="nombre" id="nombre">
-                  </div>
-                  <div class="field">
-                    <label for="correo">correo</label>
-                    <input class="form-control" type="Email" name="correo" id="correo">
-                  </div>
-                    <input type="text" name="reserva" id="reserva" value="Declaracion o propuesta" hidden>
-                  <div class="field">
-                    <label for="telefono">telefono</label>
-                    <input class="form-control" type="number" name="telefono" id="telefono">
-                  </div>
-                  <div class="field">
-                    <label for="indicaciones">indicaciones</label>
-                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
-                  </div>
-                  <div class="field">
-                    <label for="fecha">fecha</label>
-                    <input class="form-control" type="date" name="fecha" id="fecha">
-                  </div>
-                  <div class="field">
-                    <label for="hora">hora</label>
-                    <input class="form-control" type="time" name="hora" id="hora">
-                  </div>
-                  <div class="field">
-                    <label for="personas">Cantidad de personas</label>
-                    <input class="form-control" type="number" name="personas" id="personas">
+                    <input class="form-control" type="number" name="personas" id="personas" maxlength="3" required>
                   </div>
                   <br>
-                  <input  class="btn btn-outline-warning" type="submit" id="button_decla" value="Reservar" >
+                  <input  class="btn btn-outline-warning" type="submit" id="button_decla" value="Reservar" onclick="allLetter(document.form_decla.nombre)">
                 </form>
               </div>
             </div>
@@ -663,40 +617,43 @@
               <div class="col-md">
                 <img class="img-fluid" src="../images/anniversary.jpg" alt="">
                 <div class="section-title">
-                <h2> <span>Celebra tu Aniversario</span></h2>
-              </div>
+                  <h2> <span>Celebra tu Aniversario</span></h2>
+                </div>
                 <form id="form_ani">
                   <div class="field">
-                    <label for="nombre">nombre</label>
-                    <input class="form-control" type="text" name="nombre" id="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre" maxlength="50"
+                    minlength="20" required pattern="[A-Za-z]{10,50}">
                   </div>
                   <div class="field">
-                    <label for="correo">correo</label>
-                    <input class="form-control" type="Email" name="correo" id="correo">
+                    <label for="correo">Correo</label>
+                    <input class="form-control" type="email" name="correo" id="correo" aria-describedby="emailHelp" maxlength="60"
+                    minlength="13" required>
                   </div>
-                    <input type="text" name="reserva" id="reserva" value="Aniversario" hidden>
+                    <input type="text" name="reserva" id="reserva" value="Cumpleaños" hidden>
                   <div class="field">
-                    <label for="telefono">telefono</label>
-                    <input class="form-control" type="number" name="telefono" id="telefono">
+                    <label for="telefono">Teléfono</label>
+                    <input class="form-control" type="tel" name="telefono" pattern="[0-9]{10}" id="telefono" required>
                   </div>
                   <div class="field">
-                    <label for="indicaciones">indicaciones</label>
-                    <textarea class="form-control" name="indicaciones" id="indicaciones"></textarea>
+                    <label for="indicaciones">Indicaciones</label>
+                    <textarea class="form-control" name="indicaciones" id="indicaciones" maxlength="100"
+                    minlength="20" required></textarea>
                   </div>
                   <div class="field">
                     <label for="fecha">fecha</label>
-                    <input class="form-control" type="date" name="fecha" id="fecha">
+                    <input class="form-control" type="date" name="fecha" id="fecha" required>
                   </div>
                   <div class="field">
                     <label for="hora">hora</label>
-                    <input class="form-control" type="time" name="hora" id="hora">
+                    <input class="form-control" type="time" name="hora" id="hora" required>
                   </div>
                   <div class="field">
                     <label for="personas">Cantidad de personas</label>
-                    <input class="form-control" type="number" name="personas" id="personas">
+                    <input class="form-control" type="number" name="personas" id="personas" maxlength="3" required>
                   </div>
                   <br>
-                  <input  class="btn btn-outline-warning" type="submit" id="button_ani" value="Reservar" >
+                  <input  class="btn btn-outline-warning" type="submit" id="button_ani" value="Reservar" onclick="allLetter(document.form_ani.nombre)">
                 </form>
               </div>
             </div>
